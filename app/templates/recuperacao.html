@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Recuperação sucesso</title>
+</head>
+
+<body style="background-color: black;">
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+</style>
+
+    <img src="../static/logo.png" alt="Logo UFG Conecta" width="275" height="125">
+    <h2 style="color: white;">Recuperação de Senha</h2>
+    <br>
+    <label style="color: limegreen;">{{msg}}</label>
+    <br>
+    <br>
+    <form method="GET" action="recuperacao">
+        <div>
+            <label style="color: white;" for="usuario">E-mail:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="E-mail Institucional">
+        </div>
+        <br>
+        <br>
+        <input type="submit" name="enviar" value="Enviar" style="background-color: deepskyblue; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer; border: none;">
+    </form>
+    <br><br>
+    <br>
+    <a style="color: deepskyblue;" href="/" >Tela de Login</a>
+
+</body>
+</html>

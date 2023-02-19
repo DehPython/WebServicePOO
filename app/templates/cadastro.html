@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro de Usuario</title>
+</head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  label {
+    color: white;
+  }
+  input[type=text], input[type=password] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  input[type=submit], input[type=reset] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: deepskyblue;
+    color: white;
+    cursor: pointer;
+  }
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: dodgerblue;
+  }
+  a {
+    color: deepskyblue;
+  }
+</style>
+<body>
+  <img src="../static/logo2.png" alt="Logo UFG Conecta" width="275" height="125">
+  <h2>Cadastro</h2>
+  <label style="color: rgba(30,255,0,0.96);">{{msg}}</label>
+  <br>
+  <br>
+  <form method="GET" action="cadastrado">
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o Nome Completo">
+    </div>
+    <div>
+      <label for="email">E-mail institucional:</label>
+      <input type="text" id="email" name="email" placeholder="Digite o E-mail institucional">
+    </div>
+    <div>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite a Senha">
+    </div>
+    <input type="submit" name="enviar" value="Cadastrar">
+    <input type="reset" name="limpar" value="Limpar">
+  </form>
+  <br>
+  <a href="/">Página de Login</a>
+</body>
+</html>

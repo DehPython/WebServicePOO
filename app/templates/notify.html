@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Notificações</title>
+    <style>
+      /* Estilos para o corpo da página */
+      body {
+        background-color: #222;
+        color: #fff;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos para o cabeçalho da página */
+      header {
+        background-color: #00bfff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Estilos para as notificações */
+      .notificacao {
+        background-color: #1a1d20;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 20px;
+      }
+
+      .notificacao .titulo {
+        color: whitesmoke;
+        font-weight: bold;
+        margin: 0 0 10px;
+      }
+
+      .notificacao .data {
+        color: whitesmoke;
+        font-size: 12px;
+        margin: 0 0 5px;
+      }
+
+      .notificacao .texto {
+        color: whitesmoke;
+        margin: 0;
+      }
+
+      /* Estilos para os botões */
+      button {
+        background-color: #00bfff;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #00bfff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Notificações</h1>
+    </header>
+
+    <div class="notificacao">
+      <h2 class="titulo">Nova Postagem</h2>
+      <p class="data">20 de fevereiro de 2023, 10:30</p>
+      <p class="texto">Voce tem uma nova postagem de Bacharelado em Inteligência artifical, não lida.</p>
+    </div>
+
+    <div class="notificacao">
+      <h2 class="titulo">Postagem Sucedida</h2>
+      <p class="data">19 de fevereiro de 2023, 14:15</p>
+      <p class="texto">Seu post foi criado com sucesso.</p>
+    </div>
+
+    <div class="notificacao">
+      <h2 class="titulo">Comentarios INF</h2>
+      <p class="data">18 de fevereiro de 2023, 20:00</p>
+      <p class="texto">Membros do INF estão comentando sobre o futuro da IA</p>
+    </div>
+
+    <button onclick="location.href='/home'">Home</button>
+    <button onclick="location.href='/criar'">Criar</button>
+    <button onclick="location.href='/notify'">Notificações</button>
+  <br>
+    <button onclick="location.href='/configuracoes'">Configurações</button>
+  </body>
+</html>
